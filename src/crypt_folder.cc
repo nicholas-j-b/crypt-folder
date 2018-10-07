@@ -5,8 +5,8 @@
 
 
 int main(int argc, char** argv){
-  std::ifstream inFile("/home/nick/ws-cpp/crypt-folder/test/first.txt", std::ios::binary);
-  std::ofstream outFile("/home/nick/ws-cpp/crypt-folder/test/out.txt", std::ios::binary | std::ios::out);
+  std::ifstream inFile(argv[1], std::ios::binary);
+  std::ofstream outFile(argv[2], std::ios::binary | std::ios::out);
 
   std::vector<char> buffer((std::istreambuf_iterator<char>(inFile)), std::istreambuf_iterator<char>());
   if (outFile.is_open()){
@@ -16,6 +16,7 @@ int main(int argc, char** argv){
     }
     outFile.close();
   }
+
 
   return 0;
 }
