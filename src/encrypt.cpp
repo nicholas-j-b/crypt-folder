@@ -1,0 +1,6 @@
+
+
+Encrypt::Encrypt()
+{
+  
+}

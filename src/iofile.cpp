@@ -30,9 +30,6 @@ void Iofile::write_encrypted()
 {
   std::ofstream _outFile(_outFileName, std::ios::binary | std::ios::out);
 
-  std::cout<<"_data.size()"<<std::endl;
-  std::cout<<_data.size()<<std::endl;
-
   if (_outFile.is_open()){
     for(auto item : _data){
       // std::cout<<+item<<std::endl;
@@ -48,4 +45,5 @@ void Iofile::write_encrypted()
 void Iofile::debug_print()
 {
   std::cout<<"fileSize: "<<_fileSize<<std::endl;
+  std::cout<<"_data.size(): "<<_data.size()<<std::endl;
 }

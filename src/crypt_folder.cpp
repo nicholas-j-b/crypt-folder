@@ -13,7 +13,6 @@ int main(int argc, char** argv){
 
   fileObj.write_encrypted();
 
-  // std::vector<char> buffer((std::istreambuf_iterator<char>(inFile)), std::istreambuf_iterator<char>());
 
 
   return 0;
